@@ -74,7 +74,7 @@ async function startGrammarTest() {
       .getElementById("testScreen")
       .style.setProperty("display", "flex", "important");
 
-    transitionToState("B2-");
+    transitionToState(currentLevel + "-");
   } catch (error) {
     console.error("Data Load Error:", error);
   }
