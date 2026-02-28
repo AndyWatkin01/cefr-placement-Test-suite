@@ -1,6 +1,6 @@
 # CEFR Adaptive English Placement Suite
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/AndyWatkin01/cefr-placement-Test-suite)
+[![View Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://AndyWatkin01.github.io/cefr-placement-Test-suite/)
 
 An intelligent, multi-stage assessment tool designed to accurately place English language learners within the **Common European Framework of Reference for Languages (CEFR)**.
 
