@@ -1,0 +1,342 @@
+{
+  "young_people": {
+    "A1-": [
+      { "id": 1, "text": "Complete the sentence to say your name:\nHello I ___ Sam.", "options": ["A. am", "B. is", "C. are", "D. be"], "answer": "A" },
+      { "id": 2, "text": "Choose the correct word for possession:\nI ___ got a new blue bike.", "options": ["A. has", "B. have", "C. am", "D. is"], "answer": "B" },
+      { "id": 3, "text": "Choose the correct word for Maria's toy:\nThat is ___ doll.", "options": ["A. she", "B. he", "C. hers", "D. her"], "answer": "D" },
+      { "id": 4, "text": "Choose the correct words for the fruit:\nI have ___ apple and a banana in my bag.", "options": ["A. a", "B. the", "C. an", "D. some"], "answer": "C" },
+      { "id": 5, "text": "Choose the correct sentence:", "options": ["A. She no like pizza.", "B. She don't like pizza.", "C. She doesn't like pizza.", "D. She not like pizza."], "answer": "C" }
+    ],
+    "A1.1": [
+      { "id": 6, "text": "Complete the question:\n___ you speak English?", "options": ["A. Do", "B. Does", "C. Is", "D. Are"], "answer": "A" },
+      { "id": 7, "text": "Choose the correct word:\nThere ___ three books on the table.", "options": ["A. is", "B. am", "C. are", "D. be"], "answer": "C" },
+      { "id": 8, "text": "Choose the correct plural:\nI can see two ___ in the park.", "options": ["A. childs", "B. children", "C. childrens", "D. childes"], "answer": "B" },
+      { "id": 9, "text": "Choose the correct time word:\nI go to bed ___ night.", "options": ["A. in", "B. on", "C. at", "D. to"], "answer": "C" },
+      { "id": 10, "text": "Complete the sentence:\nMy brother ___ to school every day.", "options": ["A. walk", "B. walks", "C. walking", "D. walked"], "answer": "B" }
+    ],
+    "A1.2": [
+      { "id": 11, "text": "Choose the correct pronoun:\n___ are my best friends.", "options": ["A. Them", "B. Their", "C. They", "D. Him"], "answer": "C" },
+      { "id": 12, "text": "Complete the sentence:\nI ___ my homework yesterday.", "options": ["A. do", "B. does", "C. did", "D. doing"], "answer": "C" },
+      { "id": 13, "text": "Choose the correct word:\nLook! It is ___ now.", "options": ["A. rain", "B. rains", "C. raining", "D. rained"], "answer": "C" },
+      { "id": 14, "text": "Complete the sentence:\nThis is my ___ car.", "options": ["A. fathers", "B. father's", "C. father", "D. fathers'"], "answer": "B" },
+      { "id": 15, "text": "Choose the correct negative:\nWe ___ have a dog.", "options": ["A. doesn't", "B. don't", "C. not", "D. no"], "answer": "B" }
+    ],
+    "A1.2+": [
+      { "id": 16, "text": "Choose the correct word:\nI like ___ apples and oranges.", "options": ["A. both", "B. but", "C. or", "D. neither"], "answer": "A" },
+      { "id": 17, "text": "Complete the sentence:\nShe is ___ than her sister.", "options": ["A. tall", "B. taller", "C. tallest", "D. more tall"], "answer": "B" },
+      { "id": 18, "text": "Choose the correct word:\nCan I have ___ water, please?", "options": ["A. any", "B. a", "C. some", "D. an"], "answer": "C" },
+      { "id": 19, "text": "Complete the sentence:\nWe are going ___ the cinema.", "options": ["A. at", "B. to", "C. in", "D. on"], "answer": "B" },
+      { "id": 20, "text": "Choose the correct question word:\n___ is your birthday?", "options": ["A. Who", "B. Where", "C. When", "D. Why"], "answer": "C" }
+    ],
+    "A2-": [
+      { "id": 1, "text": "Yesterday, we ___ to the park.", "options": ["A. go", "B. goes", "C. went", "D. going"], "answer": "C" },
+      { "id": 2, "text": "I ___ a movie when you called.", "options": ["A. watch", "B. was watching", "C. watched", "D. have watched"], "answer": "B" },
+      { "id": 3, "text": "She is the ___ girl in our class.", "options": ["A. smart", "B. smarter", "C. smartest", "D. more smart"], "answer": "C" },
+      { "id": 4, "text": "We ___ never been to France.", "options": ["A. has", "B. have", "C. had", "D. are"], "answer": "B" },
+      { "id": 5, "text": "This is the book ___ I bought yesterday.", "options": ["A. who", "B. whose", "C. which", "D. where"], "answer": "C" }
+    ],
+    "A2.1": [
+      { "id": 6, "text": "If it rains, we ___ at home.", "options": ["A. stay", "B. will stay", "C. stayed", "D. would stay"], "answer": "B" },
+      { "id": 7, "text": "You ___ wear a coat; it's cold outside.", "options": ["A. can", "B. must", "C. may", "D. might"], "answer": "B" },
+      { "id": 8, "text": "They ___ lunch right now.", "options": ["A. eat", "B. are eating", "C. ate", "D. have eaten"], "answer": "B" },
+      { "id": 9, "text": "I ___ my keys. Have you seen them?", "options": ["A. lose", "B. lost", "C. have lost", "D. losing"], "answer": "C" },
+      { "id": 10, "text": "She ___ speak three languages.", "options": ["A. can", "B. must", "C. should", "D. will"], "answer": "A" }
+    ],
+    "A2.2": [
+      { "id": 11, "text": "The cat is ___ the table.", "options": ["A. in", "B. on", "C. under", "D. between"], "answer": "C" },
+      { "id": 12, "text": "We ___ to the beach every summer.", "options": ["A. go", "B. went", "C. have gone", "D. are going"], "answer": "A" },
+      { "id": 13, "text": "I am ___ in learning English.", "options": ["A. interest", "B. interested", "C. interesting", "D. interests"], "answer": "B" },
+      { "id": 14, "text": "There aren't ___ people in the room.", "options": ["A. many", "B. much", "C. some", "D. any"], "answer": "A" },
+      { "id": 15, "text": "He ___ his homework before dinner.", "options": ["A. do", "B. does", "C. did", "D. done"], "answer": "C" }
+    ],
+    "A2.2+": [
+      { "id": 16, "text": "This is ___ than that one.", "options": ["A. good", "B. better", "C. best", "D. more good"], "answer": "B" },
+      { "id": 17, "text": "I'll call you ___ I arrive.", "options": ["A. when", "B. while", "C. before", "D. after"], "answer": "A" },
+      { "id": 18, "text": "She ___ her room every weekend.", "options": ["A. clean", "B. cleans", "C. cleaned", "D. cleaning"], "answer": "B" },
+      { "id": 19, "text": "We ___ a great time at the party.", "options": ["A. have", "B. had", "C. having", "D. has"], "answer": "B" },
+      { "id": 20, "text": "Could you ___ me the salt, please?", "options": ["A. give", "B. pass", "C. take", "D. bring"], "answer": "B" }
+    ],
+    "B1-": [
+      { "id": 1, "text": "I haven't seen him ___ last year.", "options": ["A. for", "B. since", "C. during", "D. ago"], "answer": "B" },
+      { "id": 2, "text": "By the time we arrived, the movie ___.", "options": ["A. started", "B. has started", "C. had started", "D. was starting"], "answer": "C" },
+      { "id": 3, "text": "This is the house ___ I was born.", "options": ["A. which", "B. that", "C. where", "D. when"], "answer": "C" },
+      { "id": 4, "text": "You ___ better see a doctor.", "options": ["A. should", "B. would", "C. had", "D. must"], "answer": "C" },
+      { "id": 5, "text": "I'm looking forward ___ you soon.", "options": ["A. to see", "B. seeing", "C. to seeing", "D. see"], "answer": "C" }
+    ],
+    "B1.1": [
+      { "id": 6, "text": "If I ___ you, I wouldn't do that.", "options": ["A. am", "B. was", "C. were", "D. be"], "answer": "C" },
+      { "id": 7, "text": "She ___ in London for five years.", "options": ["A. lives", "B. is living", "C. has lived", "D. lived"], "answer": "C" },
+      { "id": 8, "text": "The cake ___ by my mother.", "options": ["A. made", "B. was made", "C. has made", "D. is making"], "answer": "B" },
+      { "id": 9, "text": "I ___ used to waking up early.", "options": ["A. am", "B. was", "C. get", "D. have"], "answer": "A" },
+      { "id": 10, "text": "He asked me ___ I was okay.", "options": ["A. that", "B. if", "C. what", "D. which"], "answer": "B" }
+    ],
+    "B1.2": [
+      { "id": 11, "text": "We ___ study harder if we want to pass.", "options": ["A. need", "B. must", "C. should", "D. ought"], "answer": "B" },
+      { "id": 12, "text": "I don't know ___ to do.", "options": ["A. what", "B. how", "C. which", "D. where"], "answer": "A" },
+      { "id": 13, "text": "She's the person ___ I told you about.", "options": ["A. who", "B. which", "C. whose", "D. whom"], "answer": "A" },
+      { "id": 14, "text": "I'll wait here ___ you come back.", "options": ["A. until", "B. while", "C. after", "D. before"], "answer": "A" },
+      { "id": 15, "text": "He enjoys ___ to music.", "options": ["A. listen", "B. listening", "C. to listen", "D. listens"], "answer": "B" }
+    ],
+    "B1.2+": [
+      { "id": 16, "text": "This car is ___ than the other one.", "options": ["A. expensive", "B. more expensive", "C. most expensive", "D. less expensive"], "answer": "B" },
+      { "id": 17, "text": "I've been working here ___ three months.", "options": ["A. for", "B. since", "C. during", "D. ago"], "answer": "A" },
+      { "id": 18, "text": "You ___ shouldn't have said that.", "options": ["A. really", "B. very", "C. quite", "D. enough"], "answer": "A" },
+      { "id": 19, "text": "I'm not sure ___ she's coming.", "options": ["A. if", "B. that", "C. when", "D. why"], "answer": "A" },
+      { "id": 20, "text": "They ___ to the cinema every Friday.", "options": ["A. go", "B. goes", "C. went", "D. have gone"], "answer": "A" }
+    ],
+    "B2-": [
+      { "id": 1, "text": "If I ___ more time, I would have finished the project.", "options": ["A. have", "B. had", "C. had had", "D. would have"], "answer": "C" },
+      { "id": 2, "text": "The man ___ I was talking to is my uncle.", "options": ["A. who", "B. whom", "C. whose", "D. that"], "answer": "B" },
+      { "id": 3, "text": "She ___ be tired after such a long journey.", "options": ["A. must", "B. can", "C. should", "D. might"], "answer": "A" },
+      { "id": 4, "text": "I wish I ___ harder for the exam.", "options": ["A. study", "B. studied", "C. had studied", "D. would study"], "answer": "C" },
+      { "id": 5, "text": "By next year, I ___ my degree.", "options": ["A. finish", "B. will finish", "C. will have finished", "D. have finished"], "answer": "C" }
+    ],
+    "B2.1": [
+      { "id": 6, "text": "Despite ___ ill, she went to work.", "options": ["A. be", "B. being", "C. she was", "D. her illness"], "answer": "B" },
+      { "id": 7, "text": "The more you practice, the ___ you'll get.", "options": ["A. good", "B. better", "C. best", "D. well"], "answer": "B" },
+      { "id": 8, "text": "I'd rather you ___ smoke in here.", "options": ["A. don't", "B. didn't", "C. wouldn't", "D. not"], "answer": "B" },
+      { "id": 9, "text": "He's the person ___ car was stolen.", "options": ["A. whose", "B. who's", "C. who", "D. that"], "answer": "A" },
+      { "id": 10, "text": "I'm not used to ___ up so early.", "options": ["A. wake", "B. waking", "C. to wake", "D. wakes"], "answer": "B" }
+    ],
+    "B2.2": [
+      { "id": 11, "text": "The film was ___ boring that I fell asleep.", "options": ["A. so", "B. such", "C. very", "D. too"], "answer": "A" },
+      { "id": 12, "text": "I'll let you know as soon as I ___ anything.", "options": ["A. hear", "B. will hear", "C. heard", "D. have heard"], "answer": "A" },
+      { "id": 13, "text": "He's supposed ___ here at 9 o'clock.", "options": ["A. be", "B. to be", "C. being", "D. been"], "answer": "B" },
+      { "id": 14, "text": "The window ___ by the wind.", "options": ["A. broke", "B. was broken", "C. has broken", "D. is breaking"], "answer": "B" },
+      { "id": 15, "text": "I don't mind ___ for a few minutes.", "options": ["A. wait", "B. waiting", "C. to wait", "D. waits"], "answer": "B" }
+    ],
+    "B2.2+": [
+      { "id": 16, "text": "You ___ have told me you were coming.", "options": ["A. should", "B. would", "C. must", "D. could"], "answer": "A" },
+      { "id": 17, "text": "It's high time you ___ a job.", "options": ["A. find", "B. found", "C. will find", "D. had found"], "answer": "B" },
+      { "id": 18, "text": "The news ___ very surprising.", "options": ["A. was", "B. were", "C. are", "D. be"], "answer": "A" },
+      { "id": 19, "text": "I'm looking for a job ___ I can use my languages.", "options": ["A. where", "B. which", "C. that", "D. whose"], "answer": "A" },
+      { "id": 20, "text": "I've been waiting here ___ over an hour.", "options": ["A. for", "B. since", "C. during", "D. ago"], "answer": "A" }
+    ],
+    "C1-": [
+      { "id": 1, "text": "Hardly ___ started the presentation when the lights went out.", "options": ["A. I had", "B. had I", "C. did I", "D. I did"], "answer": "B" },
+      { "id": 2, "text": "Such was the intensity of the storm that the trees ___ uprooted.", "options": ["A. were", "B. was", "C. had been", "D. are"], "answer": "A" },
+      { "id": 3, "text": "I'd rather you ___ tell anyone about this.", "options": ["A. don't", "B. didn't", "C. wouldn't", "D. not"], "answer": "B" },
+      { "id": 4, "text": "Were it ___ for your help, I wouldn't have succeeded.", "options": ["A. not", "B. but", "C. save", "D. only"], "answer": "A" },
+      { "id": 5, "text": "Little ___ know that the project would be such a success.", "options": ["A. I did", "B. did I", "C. I had", "D. had I"], "answer": "B" }
+    ],
+    "C1.1": [
+      { "id": 6, "text": "The company's success is ___ to its innovative marketing strategy.", "options": ["A. due", "B. owing", "C. because", "D. thanks"], "answer": "A" },
+      { "id": 7, "text": "I'm not used to ___ treated in such a way.", "options": ["A. be", "B. being", "C. to be", "D. been"], "answer": "B" },
+      { "id": 8, "text": "No sooner ___ the announcement than the crowd erupted in cheers.", "options": ["A. the news broke", "B. broke the news", "C. had the news broken", "D. the news had broken"], "answer": "C" },
+      { "id": 9, "text": "I suggested that he ___ a specialist.", "options": ["A. see", "B. sees", "C. saw", "D. will see"], "answer": "A" },
+      { "id": 10, "text": "The report, ___ was published last week, highlights several key issues.", "options": ["A. which", "B. that", "C. who", "D. whose"], "answer": "A" }
+    ],
+    "C1.2": [
+      { "id": 11, "text": "Only by working together ___ we hope to achieve our goals.", "options": ["A. can", "B. could", "C. we can", "D. do we"], "answer": "A" },
+      { "id": 12, "text": "I was about to leave ___ the phone rang.", "options": ["A. when", "B. while", "C. as", "D. then"], "answer": "A" },
+      { "id": 13, "text": "He spoke as though he ___ an expert on the subject.", "options": ["A. is", "B. was", "C. were", "D. be"], "answer": "C" },
+      { "id": 14, "text": "I don't regret ___ the truth.", "options": ["A. tell", "B. telling", "C. to tell", "D. told"], "answer": "B" },
+      { "id": 15, "text": "The building, ___ construction began two years ago, is nearly finished.", "options": ["A. which", "B. whose", "C. that", "D. who"], "answer": "B" }
+    ],
+    "C1.2+": [
+      { "id": 16, "text": "I'm looking forward to ___ from you soon.", "options": ["A. hear", "B. hearing", "C. to hear", "D. heard"], "answer": "B" },
+      { "id": 17, "text": "You ___ better check the details before signing.", "options": ["A. should", "B. would", "C. had", "D. must"], "answer": "C" },
+      { "id": 18, "text": "The news ___ confirmed by several independent sources.", "options": ["A. was", "B. were", "C. has", "D. is"], "answer": "A" },
+      { "id": 19, "text": "I'm not sure ___ to proceed with the plan.", "options": ["A. whether", "B. that", "C. if", "D. how"], "answer": "A" },
+      { "id": 20, "text": "Despite ___ several setbacks, the project was completed on time.", "options": ["A. face", "B. facing", "C. she faced", "D. her facing"], "answer": "B" }
+    ],
+    "C2-": [
+      { "id": 1, "text": "Scarcely ___ the debate begun when the moderator intervened.", "options": ["A. had", "B. has", "C. did", "D. does"], "answer": "A" },
+      { "id": 2, "text": "Given how thoroughly she prepared, she ___ have felt confident about the presentation.", "options": ["A. must", "B. should", "C. might", "D. would"], "answer": "A" },
+      { "id": 3, "text": "He claimed he would support the proposal, but his subsequent actions suggested ___.", "options": ["A. not", "B. otherwise", "C. the opposite", "D. differently"], "answer": "B" },
+      { "id": 4, "text": "___ her innovative approach that impressed the judges, not just her technical skill.", "options": ["A. It was", "B. What was", "C. That was", "D. There was"], "answer": "A" },
+      { "id": 5, "text": "The application was ___ on the grounds of insufficient supporting evidence.", "options": ["A. turned down", "B. rejected", "C. dismissed", "D. ruled out"], "answer": "C" }
+    ],
+    "C2.1": [
+      { "id": 6, "text": "It is essential that all participants ___ informed of the schedule changes.", "options": ["A. are", "B. be", "C. will be", "D. have been"], "answer": "B" },
+      { "id": 7, "text": "The criteria ___ the entries were evaluated have been updated for next year.", "options": ["A. by which", "B. which by", "C. that by", "D. by that"], "answer": "A" },
+      { "id": 8, "text": "___ I understand your concerns, I still believe we should proceed.", "options": ["A. Granted that", "B. Much as", "C. Inasmuch as", "D. Be that as it may"], "answer": "B" },
+      { "id": 9, "text": "Negotiations reached a(n) ___ due to irreconcilable positions on the core terms.", "options": ["A. deadlock", "B. impasse", "C. stalemate", "D. standstill"], "answer": "B" },
+      { "id": 10, "text": "___ the risks been more thoroughly assessed, the strategy might have been modified.", "options": ["A. If", "B. Were", "C. Had", "D. Should"], "answer": "C" }
+    ],
+    "C2.2": [
+      { "id": 11, "text": "The ___ of the initiative to achieve its stated objectives was evident within the first quarter.", "options": ["A. failing", "B. failure", "C. fail", "D. failed"], "answer": "B" },
+      { "id": 12, "text": "___ by emerging feedback, the team recalibrated their approach.", "options": ["A. Prompting", "B. Having prompted", "C. Prompted", "D. To prompt"], "answer": "C" },
+      { "id": 13, "text": "She ___ on the project for months before anyone noticed her contribution.", "options": ["A. worked", "B. had worked", "C. had been working", "D. was working"], "answer": "C" },
+      { "id": 14, "text": "___ had the implications been fully appreciated at the planning stage.", "options": ["A. Little", "B. Few", "C. Scarcely", "D. Rare"], "answer": "A" },
+      { "id": 15, "text": "The more comprehensively the variables are controlled, ___ the results are likely to be.", "options": ["A. the more reliable", "B. more reliable", "C. the reliable", "D. reliable"], "answer": "A" }
+    ],
+    "C2.2+": [
+      { "id": 16, "text": "The theory's credibility derives ___ its explanatory power across diverse contexts.", "options": ["A. in view of", "B. by virtue of", "C. on account of", "D. with regard to"], "answer": "B" },
+      { "id": 17, "text": "The impact was more profound than ___.", "options": ["A. anticipated", "B. they anticipated", "C. had been anticipated", "D. had anticipated"], "answer": "A" },
+      { "id": 18, "text": "___ the proposal contain certain ambiguities, it nonetheless provides a valuable framework.", "options": ["A. Although", "B. Even if", "C. Granted", "D. Be"], "answer": "D" },
+      { "id": 19, "text": "The model, ___ in multiple peer-reviewed publications, has influenced subsequent research.", "options": ["A. advancing", "B. advanced", "C. having advanced", "D. to advance"], "answer": "B" },
+      { "id": 20, "text": "Recent developments ___ serious doubt on the prevailing interpretation.", "options": ["A. cast", "B. threw", "C. put", "D. raised"], "answer": "A" }
+    ]
+  },
+  "adult": {
+    "A1-": [
+      { "id": 1, "text": "Where ___ you from?", "options": ["A. am", "B. is", "C. are", "D. be"], "answer": "C" },
+      { "id": 2, "text": "I ___ a student.", "options": ["A. am", "B. is", "C. are", "D. be"], "answer": "A" },
+      { "id": 3, "text": "He ___ a brother.", "options": ["A. has", "B. have", "C. is", "D. am"], "answer": "A" },
+      { "id": 4, "text": "They ___ in London.", "options": ["A. live", "B. lives", "C. living", "D. lived"], "answer": "A" },
+      { "id": 5, "text": "I ___ like pizza.", "options": ["A. don't", "B. doesn't", "C. not", "D. no"], "answer": "A" }
+    ],
+    "A1.1": [
+      { "id": 6, "text": "___ you speak English?", "options": ["A. Do", "B. Does", "C. Is", "D. Are"], "answer": "A" },
+      { "id": 7, "text": "What ___ your name?", "options": ["A. am", "B. is", "C. are", "D. be"], "answer": "B" },
+      { "id": 8, "text": "How old ___ you?", "options": ["A. am", "B. is", "C. are", "D. be"], "answer": "C" },
+      { "id": 9, "text": "She ___ a teacher.", "options": ["A. am", "B. is", "C. are", "D. be"], "answer": "B" },
+      { "id": 10, "text": "We ___ from Italy.", "options": ["A. am", "B. is", "C. are", "D. be"], "answer": "C" }
+    ],
+    "A1.2": [
+      { "id": 11, "text": "I have ___ car.", "options": ["A. a", "B. an", "C. the", "D. some"], "answer": "A" },
+      { "id": 12, "text": "He works in ___ office.", "options": ["A. a", "B. an", "C. the", "D. some"], "answer": "B" },
+      { "id": 13, "text": "This is ___ book.", "options": ["A. my", "B. mine", "C. me", "D. I"], "answer": "A" },
+      { "id": 14, "text": "That is ___ house.", "options": ["A. her", "B. hers", "C. she", "D. hers'"], "answer": "A" },
+      { "id": 15, "text": "There ___ a book on the table.", "options": ["A. is", "B. are", "C. am", "D. be"], "answer": "A" }
+    ],
+    "A1.2+": [
+      { "id": 16, "text": "There ___ three pens on the desk.", "options": ["A. is", "B. are", "C. am", "D. be"], "answer": "B" },
+      { "id": 17, "text": "I go to work ___ 9 o'clock.", "options": ["A. in", "B. on", "C. at", "D. to"], "answer": "C" },
+      { "id": 18, "text": "She lives ___ London.", "options": ["A. in", "B. on", "C. at", "D. to"], "answer": "A" },
+      { "id": 19, "text": "They go to the cinema ___ Fridays.", "options": ["A. in", "B. on", "C. at", "D. to"], "answer": "B" },
+      { "id": 20, "text": "I'll see you ___ the morning.", "options": ["A. in", "B. on", "C. at", "D. to"], "answer": "A" }
+    ],
+    "A2-": [
+      { "id": 1, "text": "She ___ lunch when the phone rang.", "options": ["A. eats", "B. was eating", "C. ate", "D. has eaten"], "answer": "B" },
+      { "id": 2, "text": "I ___ a movie yesterday.", "options": ["A. watch", "B. watched", "C. was watching", "D. have watched"], "answer": "B" },
+      { "id": 3, "text": "We ___ to the park last weekend.", "options": ["A. go", "B. went", "C. were going", "D. have gone"], "answer": "B" },
+      { "id": 4, "text": "She is the ___ person I know.", "options": ["A. smart", "B. smarter", "C. smartest", "D. more smart"], "answer": "C" },
+      { "id": 5, "text": "This book is ___ than that one.", "options": ["A. good", "B. better", "C. best", "D. more good"], "answer": "B" }
+    ],
+    "A2.1": [
+      { "id": 6, "text": "I ___ never been to Spain.", "options": ["A. has", "B. have", "C. am", "D. was"], "answer": "B" },
+      { "id": 7, "text": "She ___ lived in London for three years.", "options": ["A. has", "B. have", "C. is", "D. was"], "answer": "A" },
+      { "id": 8, "text": "If it rains, we ___ at home.", "options": ["A. stay", "B. will stay", "C. stayed", "D. would stay"], "answer": "B" },
+      { "id": 9, "text": "You ___ wear a coat; it's cold outside.", "options": ["A. can", "B. must", "C. may", "D. might"], "answer": "B" },
+      { "id": 10, "text": "Can you ___ me the salt, please?", "options": ["A. give", "B. pass", "C. take", "D. bring"], "answer": "B" }
+    ],
+    "A2.2": [
+      { "id": 11, "text": "The cat is ___ the chair.", "options": ["A. in", "B. on", "C. under", "D. between"], "answer": "C" },
+      { "id": 12, "text": "We ___ to the beach every summer.", "options": ["A. go", "B. went", "C. have gone", "D. are going"], "answer": "A" },
+      { "id": 13, "text": "I am ___ in learning English.", "options": ["A. interest", "B. interested", "C. interesting", "D. interests"], "answer": "B" },
+      { "id": 14, "text": "There aren't ___ people in the room.", "options": ["A. many", "B. much", "C. some", "D. any"], "answer": "A" },
+      { "id": 15, "text": "He ___ his homework before dinner.", "options": ["A. do", "B. does", "C. did", "D. done"], "answer": "C" }
+    ],
+    "A2.2+": [
+      { "id": 16, "text": "I'll call you ___ I arrive.", "options": ["A. when", "B. while", "C. before", "D. after"], "answer": "A" },
+      { "id": 17, "text": "She ___ her room every weekend.", "options": ["A. clean", "B. cleans", "C. cleaned", "D. cleaning"], "answer": "B" },
+      { "id": 18, "text": "We ___ a great time at the party.", "options": ["A. have", "B. had", "C. having", "D. has"], "answer": "B" },
+      { "id": 19, "text": "They ___ lunch right now.", "options": ["A. eat", "B. are eating", "C. ate", "D. have eaten"], "answer": "B" },
+      { "id": 20, "text": "I ___ my keys. Have you seen them?", "options": ["A. lose", "B. lost", "C. have lost", "D. losing"], "answer": "C" }
+    ],
+    "B1-": [
+      { "id": 1, "text": "The report ___ by the end of the week.", "options": ["A. will finish", "B. will be finished", "C. finishes", "D. is finishing"], "answer": "B" },
+      { "id": 2, "text": "I haven't seen him ___ last year.", "options": ["A. for", "B. since", "C. during", "D. ago"], "answer": "B" },
+      { "id": 3, "text": "By the time we arrived, the movie ___.", "options": ["A. started", "B. has started", "C. had started", "D. was starting"], "answer": "C" },
+      { "id": 4, "text": "This is the house ___ I was born.", "options": ["A. which", "B. that", "C. where", "D. when"], "answer": "C" },
+      { "id": 5, "text": "You ___ better see a doctor.", "options": ["A. should", "B. would", "C. had", "D. must"], "answer": "C" }
+    ],
+    "B1.1": [
+      { "id": 6, "text": "I'm looking forward ___ you soon.", "options": ["A. to see", "B. seeing", "C. to seeing", "D. see"], "answer": "C" },
+      { "id": 7, "text": "If I ___ you, I wouldn't do that.", "options": ["A. am", "B. was", "C. were", "D. be"], "answer": "C" },
+      { "id": 8, "text": "She ___ in London for five years.", "options": ["A. lives", "B. is living", "C. has lived", "D. lived"], "answer": "C" },
+      { "id": 9, "text": "The cake ___ by my mother.", "options": ["A. made", "B. was made", "C. has made", "D. is making"], "answer": "B" },
+      { "id": 10, "text": "I ___ used to waking up early.", "options": ["A. am", "B. was", "C. get", "D. have"], "answer": "A" }
+    ],
+    "B1.2": [
+      { "id": 11, "text": "He asked me ___ I was okay.", "options": ["A. that", "B. if", "C. what", "D. which"], "answer": "B" },
+      { "id": 12, "text": "We ___ study harder if we want to pass.", "options": ["A. need", "B. must", "C. should", "D. ought"], "answer": "B" },
+      { "id": 13, "text": "I don't know ___ to do.", "options": ["A. what", "B. how", "C. which", "D. where"], "answer": "A" },
+      { "id": 14, "text": "She's the person ___ I told you about.", "options": ["A. who", "B. which", "C. whose", "D. whom"], "answer": "A" },
+      { "id": 15, "text": "I'll wait here ___ you come back.", "options": ["A. until", "B. while", "C. after", "D. before"], "answer": "A" }
+    ],
+    "B1.2+": [
+      { "id": 16, "text": "He enjoys ___ to music.", "options": ["A. listen", "B. listening", "C. to listen", "D. listens"], "answer": "B" },
+      { "id": 17, "text": "This car is ___ than the other one.", "options": ["A. expensive", "B. more expensive", "C. most expensive", "D. less expensive"], "answer": "B" },
+      { "id": 18, "text": "I've been working here ___ three months.", "options": ["A. for", "B. since", "C. during", "D. ago"], "answer": "A" },
+      { "id": 19, "text": "You ___ shouldn't have said that.", "options": ["A. really", "B. very", "C. quite", "D. enough"], "answer": "A" },
+      { "id": 20, "text": "I'm not sure ___ she's coming.", "options": ["A. if", "B. that", "C. when", "D. why"], "answer": "A" }
+    ],
+    "B2-": [
+      { "id": 1, "text": "I suggest that he ___ a doctor immediately.", "options": ["A. see", "B. sees", "C. saw", "D. will see"], "answer": "A" },
+      { "id": 2, "text": "If I ___ more time, I would have finished the project.", "options": ["A. have", "B. had", "C. had had", "D. are going"], "answer": "C" },
+      { "id": 3, "text": "The man ___ I was talking to is my uncle.", "options": ["A. who", "B. whom", "C. whose", "D. that"], "answer": "B" },
+      { "id": 4, "text": "She ___ be tired after such a long journey.", "options": ["A. must", "B. can", "C. should", "D. might"], "answer": "A" },
+      { "id": 5, "text": "I wish I ___ harder for the exam.", "options": ["A. study", "B. studied", "C. had studied", "D. would study"], "answer": "C" }
+    ],
+    "B2.1": [
+      { "id": 6, "text": "By next year, I ___ my degree.", "options": ["A. finish", "B. will finish", "C. will have finished", "D. have finished"], "answer": "C" },
+      { "id": 7, "text": "Despite ___ ill, she went to work.", "options": ["A. be", "B. being", "C. she was", "D. her illness"], "answer": "B" },
+      { "id": 8, "text": "The more you practice, the ___ you'll get.", "options": ["A. good", "B. better", "C. best", "D. well"], "answer": "B" },
+      { "id": 9, "text": "I'd rather you ___ smoke in here.", "options": ["A. don't", "B. didn't", "C. wouldn't", "D. not"], "answer": "B" },
+      { "id": 10, "text": "He's the person ___ car was stolen.", "options": ["A. whose", "B. who's", "C. who", "D. that"], "answer": "A" }
+    ],
+    "B2.2": [
+      { "id": 11, "text": "I'm not used to ___ up so early.", "options": ["A. wake", "B. waking", "C. to wake", "D. wakes"], "answer": "B" },
+      { "id": 12, "text": "The film was ___ boring that I fell asleep.", "options": ["A. so", "B. such", "C. very", "D. too"], "answer": "A" },
+      { "id": 13, "text": "I'll let you know as soon as I ___ anything.", "options": ["A. hear", "B. will hear", "C. heard", "D. have heard"], "answer": "A" },
+      { "id": 14, "text": "He's supposed ___ here at 9 o'clock.", "options": ["A. be", "B. to be", "C. being", "D. been"], "answer": "B" },
+      { "id": 15, "text": "The window ___ by the wind.", "options": ["A. broke", "B. was broken", "C. has broken", "D. is breaking"], "answer": "B" }
+    ],
+    "B2.2+": [
+      { "id": 16, "text": "I don't mind ___ for a few minutes.", "options": ["A. wait", "B. waiting", "C. to wait", "D. waits"], "answer": "B" },
+      { "id": 17, "text": "You ___ have told me you were coming.", "options": ["A. should", "B. would", "C. must", "D. could"], "answer": "A" },
+      { "id": 18, "text": "It's high time you ___ a job.", "options": ["A. find", "B. found", "C. will find", "D. had found"], "answer": "B" },
+      { "id": 19, "text": "The news ___ very surprising.", "options": ["A. was", "B. were", "C. are", "D. be"], "answer": "A" },
+      { "id": 20, "text": "I'm looking for a job ___ I can use my languages.", "options": ["A. where", "B. which", "C. that", "D. whose"], "answer": "A" }
+    ],
+    "C1-": [
+      { "id": 1, "text": "I'd rather you ___ tell anyone about this.", "options": ["A. don't", "B. didn't", "C. wouldn't", "D. not"], "answer": "B" },
+      { "id": 2, "text": "Hardly ___ started the presentation when the lights went out.", "options": ["A. I had", "B. had I", "C. did I", "D. I did"], "answer": "B" },
+      { "id": 3, "text": "Such was the intensity of the storm that the trees ___ uprooted.", "options": ["A. were", "B. was", "C. had been", "D. are"], "answer": "A" },
+      { "id": 4, "text": "Were it ___ for your help, I wouldn't have succeeded.", "options": ["A. not", "B. but", "C. save", "D. only"], "answer": "A" },
+      { "id": 5, "text": "Little ___ know that the project would be such a success.", "options": ["A. I did", "B. did I", "C. I had", "D. had I"], "answer": "B" }
+    ],
+    "C1.1": [
+      { "id": 6, "text": "The company's success is ___ to its innovative marketing strategy.", "options": ["A. due", "B. owing", "C. because", "D. thanks"], "answer": "A" },
+      { "id": 7, "text": "I'm not used to ___ treated in such a way.", "options": ["A. be", "B. being", "C. to be", "D. been"], "answer": "B" },
+      { "id": 8, "text": "No sooner ___ the announcement than the crowd erupted in cheers.", "options": ["A. the news broke", "B. broke the news", "C. had the news broken", "D. the news had broken"], "answer": "C" },
+      { "id": 9, "text": "I suggested that he ___ a specialist.", "options": ["A. see", "B. sees", "C. saw", "D. will see"], "answer": "A" },
+      { "id": 10, "text": "The report, ___ was published last week, highlights several key issues.", "options": ["A. which", "B. that", "C. who", "D. whose"], "answer": "A" }
+    ],
+    "C1.2": [
+      { "id": 11, "text": "Only by working together ___ we hope to achieve our goals.", "options": ["A. can", "B. could", "C. we can", "D. do we"], "answer": "A" },
+      { "id": 12, "text": "I was about to leave ___ the phone rang.", "options": ["A. when", "B. while", "C. as", "D. then"], "answer": "A" },
+      { "id": 13, "text": "He spoke as though he ___ an expert on the subject.", "options": ["A. is", "B. was", "C. were", "D. be"], "answer": "C" },
+      { "id": 14, "text": "I don't regret ___ the truth.", "options": ["A. tell", "B. telling", "C. to tell", "D. told"], "answer": "B" },
+      { "id": 15, "text": "The building, ___ construction began two years ago, is nearly finished.", "options": ["A. which", "B. whose", "C. that", "D. who"], "answer": "B" }
+    ],
+    "C1.2+": [
+      { "id": 16, "text": "I'm looking forward to ___ from you soon.", "options": ["A. hear", "B. hearing", "C. to hear", "D. heard"], "answer": "B" },
+      { "id": 17, "text": "You ___ better check the details before signing.", "options": ["A. should", "B. would", "C. had", "D. must"], "answer": "C" },
+      { "id": 18, "text": "The news ___ confirmed by several independent sources.", "options": ["A. was", "B. were", "C. has", "D. is"], "answer": "A" },
+      { "id": 19, "text": "I'm not sure ___ to proceed with the plan.", "options": ["A. whether", "B. that", "C. if", "D. how"], "answer": "A" },
+      { "id": 20, "text": "Despite ___ several setbacks, the project was completed on time.", "options": ["A. face", "B. facing", "C. she faced", "D. her facing"], "answer": "B" }
+    ],
+    "C2-": [
+      { "id": 1, "text": "Scarcely ___ the merger been finalized when regulatory challenges emerged.", "options": ["A. had", "B. has", "C. did", "D. does"], "answer": "A" },
+      { "id": 2, "text": "Given the director's expertise, she ___ have anticipated the market response.", "options": ["A. must", "B. should", "C. might", "D. would"], "answer": "A" },
+      { "id": 3, "text": "The statement implied support for the policy, but subsequent actions indicated ___.", "options": ["A. not", "B. otherwise", "C. the contrary", "D. differently"], "answer": "B" },
+      { "id": 4, "text": "___ the rigor of the methodology that validated the findings, rather than the sample size.", "options": ["A. It was", "B. What was", "C. That was", "D. There was"], "answer": "A" },
+      { "id": 5, "text": "The application was ___ on the grounds of insufficient methodological detail.", "options": ["A. turned down", "B. rejected", "C. dismissed", "D. ruled out"], "answer": "C" }
+    ],
+    "C2.1": [
+      { "id": 6, "text": "It is crucial that the protocol ___ reviewed by the ethics committee prior to implementation.", "options": ["A. are", "B. be", "C. will be", "D. have been"], "answer": "B" },
+      { "id": 7, "text": "The framework ___ the data were analyzed has been subject to considerable critique.", "options": ["A. by which", "B. which by", "C. that by", "D. by that"], "answer": "A" },
+      { "id": 8, "text": "___ one acknowledges the constraints, the conclusions remain problematic.", "options": ["A. Granted that", "B. Much as", "C. Inasmuch as", "D. Be that as it may"], "answer": "B" },
+      { "id": 9, "text": "Negotiations reached a(n) ___ due to irreconcilable positions on the core terms.", "options": ["A. deadlock", "B. impasse", "C. stalemate", "D. standstill"], "answer": "B" },
+      { "id": 10, "text": "___ the risks been more thoroughly assessed, the strategy might have been modified.", "options": ["A. If", "B. Were", "C. Had", "D. Should"], "answer": "C" }
+    ],
+    "C2.2": [
+      { "id": 11, "text": "The ___ of the initiative to achieve its stated objectives was evident within the first quarter.", "options": ["A. failing", "B. failure", "C. fail", "D. failed"], "answer": "B" },
+      { "id": 12, "text": "___ by emerging evidence, the research team recalibrated their analytical model.", "options": ["A. Prompting", "B. Having prompted", "C. Prompted", "D. To prompt"], "answer": "C" },
+      { "id": 13, "text": "The consultant ___ on the case for over eighteen months before the breakthrough occurred.", "options": ["A. worked", "B. had worked", "C. had been working", "D. was working"], "answer": "C" },
+      { "id": 14, "text": "___ had the implications been fully appreciated at the strategic planning stage.", "options": ["A. Little", "B. Few", "C. Scarcely", "D. Rare"], "answer": "A" },
+      { "id": 15, "text": "The more comprehensively the variables are controlled, ___ the results are likely to be.", "options": ["A. the more reliable", "B. more reliable", "C. the reliable", "D. reliable"], "answer": "A" }
+    ],
+    "C2.2+": [
+      { "id": 16, "text": "The theory's credibility derives ___ its explanatory power across diverse contexts.", "options": ["A. in view of", "B. by virtue of", "C. on account of", "D. with regard to"], "answer": "B" },
+      { "id": 17, "text": "The impact was more profound than ___.", "options": ["A. anticipated", "B. they anticipated", "C. had been anticipated", "D. had anticipated"], "answer": "A" },
+      { "id": 18, "text": "___ the proposal contain certain ambiguities, it nonetheless provides a valuable heuristic.", "options": ["A. Although", "B. Even if", "C. Granted", "D. Be"], "answer": "D" },
+      { "id": 19, "text": "The model, ___ in multiple peer-reviewed publications, has influenced subsequent research.", "options": ["A. advancing", "B. advanced", "C. having advanced", "D. to advance"], "answer": "B" },
+      { "id": 20, "text": "Recent developments ___ serious doubt on the prevailing paradigm.", "options": ["A. cast", "B. threw", "C. put", "D. raised"], "answer": "A" }
+    ]
+  }
+}

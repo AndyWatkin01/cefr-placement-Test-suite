@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use of English Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="grammar-main-content">
+        <section id="welcomeScreen" class="screen" style="display: flex !important;">
+            <div class="welcome-content">
+                <h1>Section 2: Use of English</h1>
+                <button class="btn start-btn" onclick="startGrammarTest()">Begin Section</button>
+            </div>
+        </section>
+
+        <section id="testScreen" class="screen" style="display: none; flex-direction: column; align-items: center; width: 100%;">
+            <div id="testUI" style="width: 100%; min-height: 200px;"></div>
+        </section> 
+
+        <section id="resultsReadyScreen" class="screen" style="display: none; position: fixed; inset: 0; background: #f4f7f6; z-index: 9999; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="welcome-content" style="text-align: center; background: white; padding: 40px; border-radius: 15px;">
+                <h1>Assessment Complete</h1>
+                <button class="btn start-btn" onclick="goToReport()">View My Results</button>
+            </div>
+        </section>
+    </main>
+    <script src="grammar.js"></script>
+</body>
+<footer style="margin-top: 50px; padding: 20px; text-align: center; font-size: 0.8rem; color: #7f8c8d; border-top: 1px solid #eee;">
+    <p>CEFR Adaptive Placement Suite © 2026</p>
+    <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: #3498db;">CC BY-NC 4.0</a> (Content) and MIT (Code).</p>
+</footer>
+</html>

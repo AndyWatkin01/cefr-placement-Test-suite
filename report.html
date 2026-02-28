@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Report | Official Results</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    @media print {
+        /* Hide the sidebar entirely */
+        .welcome-sidebar {
+            display: none !important;
+        }
+
+        /* Ensure the main container takes up the full width */
+        .welcome-layout {
+            display: block !important;
+        }
+
+        .welcome-main {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: visible !important;
+        }
+
+        /* Optional: Hide the buttons on the PDF */
+        .report-footer {
+            display: none !important;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="welcome-layout"> 
+        <main class="welcome-main" style="overflow-y: auto;">
+            <div class="report-container">
+                
+                <header class="report-header" style="display: flex; align-items: flex-start; padding: 40px; border-bottom: 1px solid #f0f0f0;">
+                    <div class="logo-left" style="flex: 0 0 auto;">
+                        <img src="images/Logo.png" alt="Logo" style="max-width: 250px; height: auto;">
+                    </div>
+                    
+                    <div class="header-text-center" style="flex: 1; text-align: center; padding-right: 125px;"> 
+                        <h1 style="margin: 0; font-size: 2.2rem; font-weight: 800; color: #2c3e50;">CEFR Placement Report</h1>
+                        
+                        <h2 id="student-name-display" style="margin: 10px 0; font-size: 1.8rem; font-weight: 600; color: #34495e;">[student name]</h2>
+                        
+                        <p id="current-date" style="margin: 0; color: #7f8c8d; font-size: 1.1rem; font-weight: 500;">Report Dated: [mmm/yyy]</p>
+                    </div>
+                </header>
+
+                <div class="stats-grid" style="padding: 40px;">
+                    <div class="card">
+                        <div class="label">Listening Level</div>
+                        <div id="res-listening" class="score-value">--</div>
+                    </div>
+
+                    <div class="card">
+                        <div class="label">Grammar Level</div>
+                        <div id="res-uoe" class="score-value">--</div>
+                        <div id="res-sublevel" style="display:none"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="label">Result Confidence</div>
+                        <div id="res-confidence" style="font-size: 1.8rem; font-weight: 800; color: #2c3e50;">--</div>
+                        <p id="confidence-desc" style="font-size: 0.85rem; color: #7f8c8d; margin-top: 5px;">Analyzing data...</p>
+                    </div>
+
+                    <div class="card card-wide">
+                        <div class="label">Overall Profile Summary</div>
+                        <div id="profile-summary" style="font-size: 1.1rem; line-height: 1.6;">Awaiting assessment data...</div>
+                    </div>
+
+                 
+                </div>
+
+                <footer class="report-footer" style="padding: 0 40px 60px 40px; text-align: center;">
+                    <button class="btn" onclick="closeReport()" style="background-color: #7f8c8d; padding: 12px 30px;">End Session</button>
+                    <button class="btn" onclick="window.print()" style="padding: 12px 30px; margin-left: 15px;">Print Full Report</button>
+                </footer>
+            </div>
+        </main>
+
+        <aside class="welcome-sidebar">
+            <div class="sidebar-logo">
+                <img src="images/Logo.png" alt="App Logo">
+            </div>
+
+            <div class="sidebar-top">
+                <h3>Project Resources</h3>
+                <nav>
+                    <a href="https://github.com/AndyWatkin01/English_placement_listening_test/blob/main/README.md" target="_blank">📖 Documentation</a>
+                    <a href="https://github.com/AndyWatkin01/English_placement_listening_test/blob/main/project_overview_and_current-phase.pdf" target="_blank">📄 Project Overview</a>
+                    <a href="https://github.com/AndyWatkin01/English_placement_listening_test/blob/main/validation_report.pdf" target="_blank">📊 Validation Report</a>
+                    <a href="https://github.com/AndyWatkin01/English_placement_listening_test" target="_blank">💻 Source Code</a>
+                </nav>
+            </div>
+            
+            <div class="sidebar-footer">
+                <p>Contact: <a href="mailto:anthony.watkin01@gmail.com" style="color: white; text-decoration: none;">anthony.watkin01@gmail.com</a></p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="report.js"></script>
+    <script>
+        function closeReport() {
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+<footer style="margin-top: 50px; padding: 20px; text-align: center; font-size: 0.8rem; color: #7f8c8d; border-top: 1px solid #eee;">
+    <p>CEFR Adaptive Placement Suite © 2026</p>
+    <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: #3498db;">CC BY-NC 4.0</a> (Content) and MIT (Code).</p>
+</footer>
+</html>
