@@ -44,7 +44,7 @@
               "scenario": "Two friends discussing Saturday plans",
               "questions": [
                 { "q_id": "1", "text": "Why does the man decide to stay at home?", "options": ["A) Tennis", "B) Tired from work", "C) No money", "D) Waiting for sister"], "answer": "B" },
-                { "q_id": "2", "text": "What activity does the woman plan to do if she goes out?", "options": ["A) Movie", "B) Walk", "C) Play sport", "D) Meet James"], "answer": "C" },
+                { "q_id": "2", "text": "What does the woman want to do?", "options": ["A) Movie", "B) Walk", "C) Play sport", "D) Meet James"], "answer": "C" },
                 { "q_id": "3", "text": "Who is the woman planning to go with?", "options": ["A) Her sister", "B) James", "C) Her brother", "D) Alone"], "answer": "A" },
                 { "q_id": "4", "text": "When will James go for a walk?", "options": ["A) Sat Morning", "B) Sat Evening", "C) Sunday", "D) Next week"], "answer": "C" }
               ]
@@ -56,7 +56,7 @@
               "questions": [
                 { "q_id": "1", "text": "Where is Elena’s new job?", "options": ["A) School", "B) Hospital", "C) Bus station", "D) Factory"], "answer": "B" },
                 { "q_id": "2", "text": "What is Elena’s role?", "options": ["A) Nurse", "B) Driver", "C) Office worker", "D) Manager"], "answer": "C" },
-                { "q_id": "3", "text": "Why does she prefer her new start time?", "options": ["A) Sleep late", "B) Can take bus", "C) Can drive car", "D) Finishes early"], "answer": "B" },
+                { "q_id": "3", "text": "Why does she like her new start time?", "options": ["A) Sleep late", "B) Can take bus", "C) Can drive car", "D) Finishes early"], "answer": "B" },
                 { "q_id": "4", "text": "What time did her old job start?", "options": ["A) 8:30", "B) 6:00", "C) 7:30", "D) 7:00"], "answer": "D" }
               ]
             }
@@ -99,7 +99,7 @@
               "title": "The Remote Work Debate",
               "scenario": "Manager discussing new hybrid work policy",
               "questions": [
-                { "q_id": "1", "text": "What is the view on productivity?", "options": ["A) Lower", "B) Consistent", "C) Higher", "D) Unmeasurable"], "answer": "B" },
+                { "q_id": "1", "text": "What does the speaker say about productivity during remote work?", "options": ["A) Lower", "B) Consistent", "C) Higher", "D) Unmeasurable"], "answer": "B" },
                 { "q_id": "2", "text": "Why does management want employees to return to the office part-time?", "options": ["A) Costs", "B) Ethic", "C) Teamwork", "D) Building use"], "answer": "C" },
                 { "q_id": "3", "text": "What potential problem do they want to avoid with the new system?", "options": ["A) Overcrowding", "B) Siloes", "C) Office size", "D) Overworking"], "answer": "A" },
                 { "q_id": "4", "text": "What is the solution?", "options": ["A) Board decides", "B) M-W-F rule", "C) Teams organize", "D) Booking app"], "answer": "C" }
@@ -127,9 +127,9 @@
               "title": "The Ethical Consumer",
               "scenario": "Lecture on Greenwashing psychology",
               "questions": [
-                { "q_id": "1", "text": "What is the speeker’s view about giving consumers more information?", "options": ["A) Effective", "B) Leads to paralysis", "C) Reduced loyalty", "D) Required"], "answer": "B" },
+                { "q_id": "1", "text": "What is the speaker’s view about giving consumers more information?", "options": ["A) Effective", "B) Leads to paralysis", "C) Reduced loyalty", "D) Required"], "answer": "B" },
                 { "q_id": "2", "text": "What is a characteristic of Greenwashing?", "options": ["A) Labels", "B) High prices", "C) Misleading cues", "D) Transparency"], "answer": "C" },
-                { "q_id": "3", "text": "Why did the speeker mention chocolate?", "options": ["A) Complexity", "B) Recipe", "C) Cost", "D) Taste"], "answer": "A" },
+                { "q_id": "3", "text": "Why did the speaker mention chocolate?", "options": ["A) Complexity", "B) Recipe", "C) Cost", "D) Taste"], "answer": "A" },
                 { "q_id": "4", "text": "What is the final implication of the argument?", "options": ["A) Education", "B) Compliance", "C) Regulators needed", "D) Consumer power"], "answer": "C" }
               ]
             },
@@ -168,7 +168,7 @@
               "questions": [
                 { "q_id": "1", "text": "What is the speaker’s overall view of modern urban renewal projects?", "options": ["A) Safety", "B) Erases identity", "C) Blends", "D) Failure"], "answer": "B" },
                 { "q_id": "2", "text": "What does the speaker mean by ‘architectural taxidermy’?", "options": ["A) Surface only", "B) Animal motifs", "C) Restoration", "D) High cost"], "answer": "A" },
-                { "q_id": "3", "text": "What does the speeker say about heritage zones?", "options": ["A) Poor", "B) Better", "C) Excludes community", "D) Educates"], "answer": "C" },
+                { "q_id": "3", "text": "What does the speaker say about heritage zones?", "options": ["A) Poor", "B) Better", "C) Excludes community", "D) Educates"], "answer": "C" },
                 { "q_id": "4", "text": "What does the speaker suggest a city should resemble?", "options": ["A) Scratch", "B) Hide", "C) Layers", "D) Artist-led"], "answer": "C" }
               ]
             }
@@ -301,9 +301,9 @@
               "title": "The Ethical Consumer",
               "scenario": "Lecture on Greenwashing psychology",
               "questions": [
-                { "q_id": "1", "text": "What is the speeker’s view about giving consumers more information?", "options": ["A) Effective", "B) Leads to paralysis", "C) Reduced loyalty", "D) Required"], "answer": "B" },
+                { "q_id": "1", "text": "What is the speaker’s view about giving consumers more information?", "options": ["A) Effective", "B) Leads to paralysis", "C) Reduced loyalty", "D) Required"], "answer": "B" },
                 { "q_id": "2", "text": "What is a characteristic of Greenwashing?", "options": ["A) Labels", "B) High prices", "C) Misleading cues", "D) Transparency"], "answer": "C" },
-                { "q_id": "3", "text": "Why did the speeker mention chocolate?", "options": ["A) Complexity", "B) Recipe", "C) Cost", "D) Taste"], "answer": "A" },
+                { "q_id": "3", "text": "Why did the speaker mention chocolate?", "options": ["A) Complexity", "B) Recipe", "C) Cost", "D) Taste"], "answer": "A" },
                 { "q_id": "4", "text": "What is the final implication of the argument?", "options": ["A) Education", "B) Compliance", "C) Regulators needed", "D) Consumer power"], "answer": "C" }
               ]
             },
@@ -342,7 +342,7 @@
               "questions": [
                 { "q_id": "1", "text": "What is the speaker’s overall view of modern urban renewal projects?", "options": ["A) Safety", "B) Erases identity", "C) Blends", "D) Failure"], "answer": "B" },
                 { "q_id": "2", "text": "What does the speaker mean by ‘architectural taxidermy’?", "options": ["A) Surface only", "B) Animal motifs", "C) Restoration", "D) High cost"], "answer": "A" },
-                { "q_id": "3", "text": "What does the speeker say about heritage zones?", "options": ["A) Poor", "B) Better", "C) Excludes community", "D) Educates"], "answer": "C" },
+                { "q_id": "3", "text": "What does the speaker say about heritage zones?", "options": ["A) Poor", "B) Better", "C) Excludes community", "D) Educates"], "answer": "C" },
                 { "q_id": "4", "text": "What does the speaker suggest a city should resemble?", "options": ["A) Scratch", "B) Hide", "C) Layers", "D) Artist-led"], "answer": "C" }
 ]
             }
