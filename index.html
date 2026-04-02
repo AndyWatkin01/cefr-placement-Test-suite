@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEFR Listening Assessment | V2</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-layout"> 
+        <main class="welcome-main">
+            <section id="welcome-screen" class="screen" style="display: flex !important;">
+    <div class="welcome-content">
+        <div class="logo-container">
+            <img src="images/Logo.png" alt="Logo" class="main-logo">
+        </div>
+        <h1>English Placement Test</h1>
+        <p>Select your category to begin the assessment.</p>
+        <div class="selection-buttons">
+            <button class="btn version-btn" onclick="selectAudience('adult')">Adult / Professional</button>
+            <button class="btn version-btn" onclick="selectAudience('young_people')">Young Learners</button>
+        </div>
+    </div>
+</section>
+
+            <section id="confirm-screen" class="screen">
+                <div class="welcome-content">
+                    <h1>Confirm Selection</h1>
+                    <p id="selectedVersion" style="margin: 20px 0; font-weight: bold; color: #1abc9c;"></p>
+                    
+                    <div style="margin-bottom: 25px; width: 100%; max-width: 300px; display: inline-block; text-align: left;">
+                        <label for="studentName" class="label">What is your name?:</label>
+                        <input type="text" id="studentName" placeholder="e.g. John Doe" 
+                               style="width: 100%; padding: 12px; border: 2px solid #f0f0f0; border-radius: 8px; font-size: 1rem; outline: none; box-sizing: border-box;">
+                    </div>
+                    <br>
+                    <button class="btn start-btn" onclick="startAssessment()">Begin Assessment</button>
+                    <br><br>
+                    <a href="#" onclick="location.reload()" style="color: #7f8c8d; font-size: 0.9rem; text-decoration: none;">← Change Category</a>
+                </div>
+            </section>
+
+            <section id="test-screen" class="screen">
+                <div id="testUI" class="welcome-content">
+                    </div>
+            </section>
+        </main>
+
+        <aside class="welcome-sidebar">
+            <div class="sidebar-logo">
+                <img src="images/Logo.png" alt="App Logo">
+            </div>
+
+            <div class="sidebar-top">
+                <h3>Project Resources</h3>
+                <nav>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/README.md" target="_blank">📖 Documentation</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/User%20Manual.pdf" target="_blank">User Manual</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/Project%20Overview.pdf" target="_blank">Project Overview</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/Pedagogical%20Rationale%20and%20Scoring%20Manual.pdf" target="_blank">Pedagogical Rationale</a>
+                    <a href="https://github.com/AndyWatkin01/English_placement_listening_test/blob/main/validation_report.pdf" target="_blank">Listening Test Validation Report</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/validation_report_use_of_english_test.pdf" target="_blank">Grammar Test Validation Report</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/validation_report_Cognitive_Load.pdf" target="_blank">Cognitive Load Validation Report</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite" target="_blank">💻 Source Code</a>
+                </nav>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Contact: <a href="mailto:anthony.watkin01@gmail.com" style="color: white; text-decoration: none;">anthony.watkin01@gmail.com</a></p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+<footer style="margin-top: 50px; padding: 20px; text-align: center; font-size: 0.8rem; color: #7f8c8d; border-top: 1px solid #eee;">
+    <p>CEFR Adaptive Placement Suite © 2026</p>
+    <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: #3498db;">CC BY-NC 4.0</a> (Content) and MIT (Code).</p>
+</footer>
+</html>

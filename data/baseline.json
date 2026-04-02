@@ -1,0 +1,33 @@
+{
+  "test_name": "Cognitive Response Baseline",
+  "questions": [
+    {
+      "track_id": "Base01",
+      "scenario": "A person introducing themselves.",
+      "text": "What is the speaker's name?",
+      "options": ["A. Andy", "B. Randy", "C. Sandy", "D. Candy"],
+      "answer": "A"
+    },
+    {
+      "track_id": "Base02",
+      "scenario": "A person introducing themselves.",
+      "text": "What is the speaker's name?",
+      "options": ["A. Mandy", "B. Andy", "C. Brandy", "D. Dandy"],
+      "answer": "B"
+    },
+    {
+      "track_id": "Base03",
+      "scenario": "A person clarifying their name.",
+      "text": "What is the speaker's name?",
+      "options": ["A. Andy", "B. Fred", "C. Ted", "D. Ed"],
+      "answer": "B"
+    },
+    {
+      "track_id": "Base04",
+      "scenario": "A short greeting.",
+      "text": "Who is being greeted?",
+      "options": ["A. Andy", "B. Anthony", "C. Andrew", "D. Arnie"],
+      "answer": "A"
+    }
+  ]
+}

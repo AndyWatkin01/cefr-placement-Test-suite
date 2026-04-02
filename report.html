@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placement Report | Official Results</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+      }
+      .welcome-layout {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-direction: row;
+      }
+      .welcome-main {
+        flex: 1;
+        overflow-y: auto;
+        background: #f4f7f6;
+        padding: 40px;
+      }
+      .welcome-sidebar {
+        flex: 0 0 280px;
+        background: #2c3e50;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .report-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      }
+
+      @media print {
+        /* 1. RESET LAYOUT: Break the "100vh" screen lock so the PDF can span multiple pages */
+        html, body {
+          height: auto !important;
+          overflow: visible !important;
+        }
+        
+        .welcome-layout {
+          display: block !important; /* Disables flexbox for the printer */
+          height: auto !important;
+        }
+
+        .welcome-main {
+          display: block !important;
+          overflow: visible !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+
+        .report-container {
+          box-shadow: none !important;
+          max-width: 100% !important;
+          width: 100% !important;
+          margin: 0 !important;
+        }
+
+        /* 2. SIDEBAR: Hide from paper without affecting the screen */
+        .welcome-sidebar {
+          display: none !important;
+        }
+
+        /* 3. SECTION CONTROL: Force the split */
+        .page-one-wrapper {
+          display: block !important;
+          page-break-after: avoid !important;
+        }
+
+        .grammar-page-break {
+          display: block !important;
+          page-break-before: always !important; /* Force the Grammar section to the next page */
+          margin-top: 50px !important;
+        }
+
+        /* 4. PREVENT "ORPHANS": Stops the blue box from splitting in half */
+        .card-wide {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          display: block !important;
+        }
+
+        /* 5. UI CLEANUP: Hide buttons on paper */
+        .report-footer, .btn {
+          display: none !important;
+        }
+
+        body {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+      }
+
+      .metric-heading {
+        font-weight: bold;
+        font-size: 0.7rem;
+        color: #7f8c8d;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+      }
+      .dynamic-note {
+        font-size: 0.75rem;
+        color: #7f8c8d;
+        margin-top: 2px;
+      }
+      .checklist-reason {
+        display: block;
+        font-size: 0.75rem;
+        color: #7f8c8d;
+        font-style: italic;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        line-height: 1.3;
+      }
+      .intro-text {
+        font-size: 0.95rem;
+        color: #34495e;
+        line-height: 1.6;
+        margin-bottom: 35px;
+        max-width: 90%;
+      }
+      .sub-section-title {
+        font-size: 0.85rem;
+        font-weight: 800;
+        color: #7f8c8d;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+        border-left: 3px solid #3498db;
+        padding-left: 10px;
+      }
+      .score-value {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: #2980b9;
+      }
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px 40px;
+      }
+      .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        position: relative;
+      }
+      .card-wide {
+        margin: 0 40px 20px 40px;
+        border: 2px solid #3498db;
+      }
+      .btn {
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-weight: 600;
+        background: #3498db;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="welcome-layout">
+      <main class="welcome-main">
+        <div class="report-container">
+          <div class="page-one-wrapper">
+            <header
+              class="report-header"
+              style="
+                display: flex;
+                align-items: flex-start;
+                padding: 40px;
+                border-bottom: 1px solid #f0f0f0;
+              "
+            >
+              <div class="logo-left">
+                <img
+                  src="images/Logo.png"
+                  alt="Logo"
+                  style="max-width: 200px; height: auto"
+                />
+              </div>
+              <div style="flex: 1; text-align: center; padding-right: 100px">
+                <h1
+                  style="
+                    margin: 0;
+                    font-size: 2rem;
+                    font-weight: 800;
+                    color: #2c3e50;
+                  "
+                >
+                  CEFR Placement Report
+                </h1>
+                <h2
+                  id="student-name-display"
+                  style="margin: 10px 0; font-size: 1.6rem; color: #34495e"
+                >
+                  [Student Name]
+                </h2>
+                <p id="current-date" style="margin: 0; color: #7f8c8d">
+                  Report Dated: [Date]
+                </p>
+              </div>
+            </header>
+
+            <div class="stats-grid">
+              <div class="card">
+                <div class="metric-heading">Listening Level</div>
+                <div id="res-listening" class="score-value">--</div>
+              </div>
+              <div class="card">
+                <div class="metric-heading">Grammar Level</div>
+                <div id="res-uoe" class="score-value">--</div>
+              </div>
+            </div>
+
+            <div class="card card-wide">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  margin-bottom: 15px;
+                "
+              >
+                <span style="font-size: 1.5rem">⚡</span>
+                <h3
+                  style="margin: 0; color: #2c3e50; text-transform: uppercase"
+                >
+                  Cognitive Load Analysis
+                </h3>
+              </div>
+              <p class="intro-text">
+                Two students at the same CEFR level can be very different. One
+                may reach the level easily and be ready to move forward, while
+                another may reach it with high effort.
+              </p>
+
+              <div
+                style="
+                  padding: 15px;
+                  background: #fdfdfd;
+                  border: 1px solid #e1e8ed;
+                  border-radius: 8px;
+                  margin-bottom: 25px;
+                "
+              >
+                <h4
+                  style="
+                    color: #2c3e50;
+                    font-size: 0.85rem;
+                    text-transform: uppercase;
+                    margin: 0 0 8px 0;
+                    letter-spacing: 1px;
+                  "
+                >
+                  🎯 Cognitive Load Summary
+                </h4>
+                <p
+                  id="overall-summary-text"
+                  style="
+                    margin: 0;
+                    font-size: 0.9rem;
+                    color: #34495e;
+                    line-height: 1.5;
+                    font-style: italic;
+                  "
+                >
+                  Analyzing integrated profile...
+                </p>
+              </div>
+
+              <div class="sub-section-title">Listening Processing</div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  gap: 15px;
+                  margin-bottom: 20px;
+                "
+              >
+                <div
+                  style="
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                  "
+                >
+                  <div class="metric-heading">MENTAL EFFORT</div>
+                  <div
+                    id="listen-load-dots"
+                    style="font-size: 1rem; letter-spacing: 2px"
+                  >
+                    ○ ○ ○ ○ ○
+                  </div>
+                  <div
+                    id="listen-effort-label"
+                    class="dynamic-note"
+                    style="font-weight: bold; color: #2c3e50"
+                  >
+                    Calculating...
+                  </div>
+                  <div
+                    id="listen-effort-desc"
+                    class="dynamic-note"
+                    style="font-style: italic"
+                  ></div>
+                </div>
+                <div
+                  style="
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                  "
+                >
+                  <div class="metric-heading">PROCESSING DELAY</div>
+                  <div
+                    id="listen-ratio-value"
+                    style="font-size: 1.1rem; font-weight: bold; color: #2c3e50"
+                  >
+                    --
+                  </div>
+                  <div
+                    id="listen-ratio-label"
+                    class="dynamic-note"
+                    style="font-weight: bold; color: #2c3e50"
+                  ></div>
+                  <div
+                    id="listen-ratio-desc"
+                    class="dynamic-note"
+                    style="font-style: italic"
+                  ></div>
+                </div>
+                <div
+                  style="
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                  "
+                >
+                  <div class="metric-heading">AUDIO DEPENDENCY</div>
+                  <div
+                    id="listen-playback-value"
+                    style="font-size: 1.1rem; font-weight: bold; color: #2c3e50"
+                  >
+                    --
+                  </div>
+                  <div
+                    id="listen-play-label"
+                    class="dynamic-note"
+                    style="font-weight: bold; color: #2c3e50"
+                  ></div>
+                  <div
+                    id="listen-play-desc"
+                    class="dynamic-note"
+                    style="font-style: italic"
+                  ></div>
+                </div>
+              </div>
+              <div
+                style="
+                  padding: 15px;
+                  background: #eef7ff;
+                  border-radius: 8px;
+                  border-left: 4px solid #3498db;
+                "
+              >
+                <h4
+                  id="listen-obs-title"
+                  style="
+                    color: #2980b9;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    margin: 0 0 5px 0;
+                  "
+                >
+                  Listening Profile
+                </h4>
+                <p id="listen-obs-desc" style="...">
+                  Analyzing listening patterns...
+                </p>
+              </div> </div> </div> <div class="grammar-page-break">
+            <div class="card card-wide">
+              <div class="sub-section-title">Grammar Processing</div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  gap: 15px;
+                  margin-bottom: 20px;
+                "
+              >
+                <div
+                  style="
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                  "
+                >
+                  <div class="metric-heading">MENTAL EFFORT</div>
+                  <div
+                    id="load-value"
+                    style="font-size: 1rem; letter-spacing: 2px; color: #2c3e50"
+                  >
+                    ○ ○ ○ ○ ○
+                  </div>
+                  <div
+                    id="effort-label"
+                    class="dynamic-note"
+                    style="font-weight: bold; color: #2c3e50"
+                  >
+                    --
+                  </div>
+                  <div
+                    id="effort-desc"
+                    class="dynamic-note"
+                    style="font-style: italic"
+                  ></div>
+                </div>
+                <div
+                  style="
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                  "
+                >
+                  <div class="metric-heading">RESPONSE STYLE</div>
+                  <div id="style-icon" style="font-size: 1.1rem">⚖️</div>
+                  <div
+                    id="style-label"
+                    class="dynamic-note"
+                    style="font-weight: bold; color: #2c3e50"
+                  >
+                    --
+                  </div>
+                  <div
+                    id="style-desc"
+                    class="dynamic-note"
+                    style="font-style: italic"
+                  >
+                    --
+                  </div>
+                </div>
+                <div
+                  style="
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                  "
+                >
+                  <div class="metric-heading">STABILITY</div>
+                  <div id="stability-icon" style="font-size: 1.1rem">📊</div>
+                  <div
+                    id="stability-value"
+                    class="dynamic-note"
+                    style="font-weight: bold; color: #2c3e50"
+                  >
+                    --
+                  </div>
+                  <div
+                    id="stability-desc"
+                    class="dynamic-note"
+                    style="font-style: italic"
+                  >
+                    --
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  padding: 20px;
+                  background: #eef7ff;
+                  border-radius: 8px;
+                  border-left: 4px solid #3498db;
+                  margin-bottom: 20px;
+                "
+              >
+                <h4
+                  id="grammar-obs-title"
+                  style="
+                    color: #2980b9;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    margin: 0 0 5px 0;
+                  "
+                >
+                  Grammar Observation
+                </h4>
+                <p
+                  id="pedagogical-rec"
+                  style="
+                    margin: 0;
+                    font-size: 0.9rem;
+                    color: #34495e;
+                    line-height: 1.6;
+                    font-style: italic;
+                  "
+                >
+                  Awaiting diagnostic analysis...
+                </p>
+              </div>
+              <div style="border-top: 1px solid #eee; padding-top: 20px">
+                <h4
+                  style="
+                    color: #2c3e50;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <span>📝</span> Teacher’s Observational Checklist
+                </h4>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 40px;
+                  "
+                >
+                  <ul
+                    style="
+                      margin: 0;
+                      padding-left: 20px;
+                      color: #34495e;
+                      font-size: 0.85rem;
+                    "
+                  >
+                    <li>
+                      <strong>Residual Capacity</strong
+                      ><span class="checklist-reason"
+                        >Does the student have "spare" brainpower?</span
+                      >
+                    </li>
+                    <li>
+                      <strong>Communicative Will</strong
+                      ><span class="checklist-reason"
+                        >Do they prioritize accuracy over the message?</span
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    style="
+                      margin: 0;
+                      padding-left: 20px;
+                      color: #34495e;
+                      font-size: 0.85rem;
+                    "
+                  >
+                    <li>
+                      <strong>Recovery Rate</strong
+                      ><span class="checklist-reason"
+                        >Watch for mistakes on easy tasks after hard ones.</span
+                      >
+                    </li>
+                    <li>
+                      <strong>Interference Tolerance</strong
+                      ><span class="checklist-reason"
+                        >Can they focus despite distractions?</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer
+            class="report-footer"
+            style="padding: 40px; text-align: center"
+          >
+            <button
+              class="btn"
+              onclick="closeReport()"
+              style="
+                background-color: #7f8c8d;
+                padding: 12px 30px;
+                display: inline-block;
+                width: 220px;
+              "
+            >
+              End Session
+            </button>
+            <button
+              class="btn"
+              onclick="window.print()"
+              style="
+                padding: 12px 30px;
+                margin-left: 15px;
+                display: inline-block;
+                width: 320px;
+              "
+            >
+              Print Full Report
+            </button>
+          </footer>
+        </div>
+      </main>
+
+      <aside class="welcome-sidebar">
+        <div class="sidebar-logo">
+          <img src="images/Logo.png" alt="App Logo" />
+        </div>
+
+        <div class="sidebar-top">
+          <h3>Project Resources</h3>
+           <nav>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/README.md" target="_blank">📖 Documentation</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/User%20Manual.pdf" target="_blank">User Manual</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/Project%20Overview.pdf" target="_blank">Project Overview</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/Pedagogical%20Rationale%20and%20Scoring%20Manual.pdf" target="_blank">Pedagogical Rationale</a>
+                    <a href="https://github.com/AndyWatkin01/English_placement_listening_test/blob/main/validation_report.pdf" target="_blank">Listening Test Validation Report</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/validation_report_use_of_english_test.pdf" target="_blank">Grammar Test Validation Report</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite/blob/main/validation_report_Cognitive_Load.pdf" target="_blank">Cognitive Load Validation Report</a>
+                    <a href="https://github.com/AndyWatkin01/cefr-placement-Test-suite" target="_blank">💻 Source Code</a>
+                </nav>
+        </div>
+
+        <div class="sidebar-footer">
+          <p>
+            Contact:
+            <a
+              href="mailto:anthony.watkin01@gmail.com"
+              style="color: white; text-decoration: none"
+              >anthony.watkin01@gmail.com</a
+            >
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <script src="diagnostic-engine.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const rawData = localStorage.getItem("placement_dossier");
+        if (!rawData) return;
+
+        let dossier = JSON.parse(rawData);
+
+        console.log("--- Report Screen Loaded ---");
+        console.log("Dossier received from test:", dossier);
+
+        // Run the engine
+        dossier = runDiagnosticAnalysis(dossier);
+
+        const profile = dossier.diagnosticProfile;
+
+        document.getElementById("student-name-display").textContent =
+          dossier.studentName || "Guest Student";
+        document.getElementById("current-date").textContent =
+          `Report Dated: ${new Date().toLocaleDateString()}`;
+        document.getElementById("res-listening").textContent =
+          dossier.listeningLevelReached || "--";
+        document.getElementById("res-uoe").textContent =
+          dossier.finalGrammarLevel || "--";
+
+        if (profile.listening) {
+          const l = profile.listening;
+          document.getElementById("listen-load-dots").textContent =
+            l.effort.visual;
+          document.getElementById("listen-effort-label").textContent =
+            l.effort.label;
+          document.getElementById("listen-effort-desc").textContent =
+            l.effort.interpretation;
+          document.getElementById("listen-ratio-label").textContent =
+            l.ratioProfile.label;
+          document.getElementById("listen-ratio-desc").textContent =
+            l.ratioProfile.interpretation;
+          document.getElementById("listen-play-label").textContent =
+            l.playProfile.label;
+          document.getElementById("listen-play-desc").textContent =
+            l.playProfile.interpretation;
+          document.getElementById("listen-ratio-value").textContent =
+            `${l.metrics.loadRatio}x`;
+          document.getElementById("listen-playback-value").textContent =
+            l.metrics.playbackStrain;
+          document.getElementById("listen-obs-title").textContent =
+            l.observation.title;
+          document.getElementById("listen-obs-desc").textContent =
+            l.observation.desc;
+        }
+
+        if (profile.grammar) {
+          const g = profile.grammar;
+          document.getElementById("load-value").textContent = g.effort.visual;
+          document.getElementById("effort-label").textContent = g.effort.label;
+          document.getElementById("effort-desc").textContent =
+            g.effort.interpretation;
+          document.getElementById("style-icon").textContent = g.style.icon;
+          document.getElementById("style-label").textContent = g.style.label;
+          document.getElementById("style-desc").textContent = g.style.desc;
+          document.getElementById("stability-icon").textContent =
+            g.stability.icon;
+          document.getElementById("stability-value").textContent =
+            g.stability.label;
+          document.getElementById("stability-desc").textContent =
+            g.stability.desc || "";
+          document.getElementById("pedagogical-rec").textContent =
+            g.observation.desc;
+          if (document.getElementById("grammar-obs-title"))
+            document.getElementById("grammar-obs-title").textContent =
+              g.observation.title;
+        }
+
+        const mList = document.getElementById("list-mastery");
+        const fList = document.getElementById("list-frontier");
+        (dossier.masteredCompetencies || []).forEach((i) => {
+          const li = document.createElement("li");
+          li.textContent = i;
+          mList.appendChild(li);
+        });
+        (dossier.learningFrontier || []).forEach((i) => {
+          const li = document.createElement("li");
+          li.textContent = i;
+          fList.appendChild(li);
+        });
+      });
+      function closeReport() {
+        localStorage.removeItem("placement_dossier");
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
