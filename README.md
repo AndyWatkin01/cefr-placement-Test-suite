@@ -1,6 +1,3 @@
-Here is the updated `README.md` for your Beta build, structured to communicate the value of the app to three distinct audiences: users (teachers/students), pedagogical experts, and developers.
-
-***
 
 # CEFR Adaptive English Placement Suite (Beta)
 
@@ -47,6 +44,3 @@ The application uses a dual-layer CSS strategy to handle the transition from a w
 ### Data Persistence
 A single `placement_dossier` object in `localStorage` acts as the source of truth, updated via a series of state transitions across the listening, grammar, and diagnostic modules before being purged upon session completion.
 
----
-**Author:** Anthony Watkin  
-**Build:** Beta 3.0 (Placement Assessment)
