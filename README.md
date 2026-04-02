@@ -1,7 +1,7 @@
 
 # CEFR Adaptive English Placement Suite (Beta)
 
-**[🔗 View Live Application](https://andywatkin01.github.io/cefr-placement-Test-suite/)**
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-blue?style=for-the-badge&logo=github)]([https://yourusername.github.io/repository-name/](https://andywatkin01.github.io/cefr-placement-Test-suite/))
 
 ## 🌟 For Teachers & Students: Why use this app?
 
