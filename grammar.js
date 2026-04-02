@@ -140,19 +140,21 @@ function showQuestion() {
 
 function handleAnswer(choice) {
   const q = currentQuestions[currentQuestionIndex];
+
+  // SAFETY: Stop if question is missing
+  if (!q) {
+    finalizeTest();
+    return;
+  }
+
   const isCorrect = choice ? choice.trim().startsWith(q.answer) : false;
   logLikelihoodRatio += isCorrect ? LLR_CORRECT : LLR_INCORRECT;
 
-  // DEBUG LOG:
   console.log(`--- DEBUG TRACE ---`);
   console.log(
     `Level: ${currentLevel}${currentLevelSuffix} | Q#: ${currentQuestionIndex + 1}/${currentQuestions.length}`,
   );
-  console.log(`Question: "${q.text}"`);
-  console.log(`Response: ${choice || "PASS"} | Correct: ${isCorrect}`);
-  console.log(
-    `New LLR: ${logLikelihoodRatio.toFixed(2)} | Boundary: ${BOUNDARY_A}/${BOUNDARY_B}`,
-  );
+  console.log(`New LLR: ${logLikelihoodRatio.toFixed(2)}`);
 
   grammarSessionLog.push({
     level: currentLevel,
@@ -160,24 +162,45 @@ function handleAnswer(choice) {
     isCorrect: isCorrect,
     llr: logLikelihoodRatio,
     userResponse: choice || "PASSED",
-    timestamp: Date.now(), 
+    timestamp: Date.now(),
   });
 
+  // 1. Check for promotion (Level Up)
   if (logLikelihoodRatio >= BOUNDARY_A) {
-    handleLevelUp();
-  } else if (logLikelihoodRatio <= BOUNDARY_B) {
-    handleLevelDown();
-  } else {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < currentQuestions.length) {
-      showQuestion();
+    const currentIndex = SUB_LEVEL_LADDER.indexOf(
+      currentLevel + currentLevelSuffix,
+    );
+    if (currentIndex >= SUB_LEVEL_LADDER.length - 1) {
+      finalizeTest(); // Reached the C2.2+ ceiling
     } else {
-      // CHOICE B: Climb if positive score, otherwise end.
-      if (logLikelihoodRatio > 0) {
-        handleLevelUp();
-      } else {
+      handleLevelUp();
+    }
+    return; // Stop execution here so we don't increment the index
+  }
+
+  // 2. Check for demotion (Level Down)
+  if (logLikelihoodRatio <= BOUNDARY_B) {
+    handleLevelDown();
+    return; // Stop execution
+  }
+
+  // 3. Increment or End if out of questions
+  currentQuestionIndex++;
+  if (currentQuestionIndex < currentQuestions.length) {
+    showQuestion();
+  } else {
+    // If we finished the questions but didn't hit a boundary
+    if (logLikelihoodRatio > 0) {
+      const currentIndex = SUB_LEVEL_LADDER.indexOf(
+        currentLevel + currentLevelSuffix,
+      );
+      if (currentIndex >= SUB_LEVEL_LADDER.length - 1) {
         finalizeTest();
+      } else {
+        handleLevelUp();
       }
+    } else {
+      finalizeTest();
     }
   }
 }
@@ -249,20 +272,34 @@ function transitionToState(stateName) {
 }
 
 function finalizeTest() {
-  // AWARD LOGIC: Find the highest sub-level ending with a positive score
+  
+  const container = document.getElementById("testUI");
+  if (container) {
+    container.innerHTML =
+      "<div style='text-align:center; padding:40px;'><h3>Analysis Complete</h3><p>Generating your pedagogical profile...</p></div>";
+  }
+
+   let highestAttempted = "A1-";
   let highestPassed = "A1-";
 
   SUB_LEVEL_LADDER.forEach((rung) => {
     const rungLogs = grammarSessionLog.filter((l) => l.subLevel === rung);
     if (rungLogs.length > 0) {
+      highestAttempted = rung;
       const finalLLR = rungLogs[rungLogs.length - 1].llr;
-      // If the LLR ended above 0, they passed this rung
-      if (finalLLR > 0) highestPassed = rung;
+      if (finalLLR > 0) {
+        highestPassed = rung;
+      }
     }
   });
 
+  let finalAward = highestPassed;
+  if (highestPassed === "A1-" && highestAttempted !== "A1-") {
+    finalAward = highestAttempted;
+  }
+
   placementDossier.grammarSessionLog = grammarSessionLog;
-  placementDossier.finalGrammarLevel = highestPassed; // Award the best pass
+  placementDossier.finalGrammarLevel = finalAward;
   placementDossier.lastSubLevel = currentLevel + currentLevelSuffix;
   placementDossier.studentName = placementDossier.studentName || "Guest";
 
@@ -271,11 +308,14 @@ function finalizeTest() {
   const resultsScreen = document.getElementById("resultsReadyScreen");
   const testScreen = document.getElementById("testScreen");
 
-  if (testScreen) testScreen.style.setProperty("display", "none", "important");
+  if (testScreen) {
+    testScreen.style.setProperty("display", "none", "important");
+  }
   if (resultsScreen) {
     resultsScreen.style.setProperty("display", "flex", "important");
+    resultsScreen.classList.remove("hidden");
   }
-} 
+}
 
 /**
  * Navigates the student to the final report page.
